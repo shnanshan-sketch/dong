@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品展示 - 动效创意网站</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 鼠标跟随效果 -->
+    <div class="cursor-follower"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 data-text="MOTION">MOTION</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="about.html" class="nav-link">关于</a></li>
+                <li><a href="services.html" class="nav-link">服务</a></li>
+                <li><a href="gallery.html" class="nav-link active">作品</a></li>
+                <li><a href="contact.html" class="nav-link">联系</a></li>
+                <li><a href="admin.html" class="nav-link admin-btn"><i class="fas fa-cog"></i> 管理</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">首页</a> / <span>作品展示</span>
+            </div>
+            <h1>作品展示</h1>
+            <p>探索我们的创意项目和成功案例</p>
+        </div>
+    </section>
+
+    <!-- 作品筛选 -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">网站设计</button>
+                <button class="filter-btn" data-filter="mobile">移动应用</button>
+                <button class="filter-btn" data-filter="branding">品牌设计</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示 -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="web" id="project1">
+                    <div class="gallery-image">
+                        <img src="https://picsum.photos/600/400?random=1" alt="创意品牌设计">
+                        <div class="gallery-overlay">
+                            <h3>创意品牌设计</h3>
+                            <p>品牌识别与视觉系统</p>
+                            <button class="view-project">查看项目</button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>创意品牌设计</h3>
+                        <p>为知名科技公司打造完整的品牌视觉识别系统</p>
+                        <div class="project-tags">
+                            <span class="tag">品牌设计</span>
+                            <span class="tag">视觉识别</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="web" id="project2">
+                    <div class="gallery-image">
+                        <img src="https://picsum.photos/600/400?random=2" alt="交互式网站">
+                        <div class="gallery-overlay">
+                            <h3>交互式网站</h3>
+                            <p>现代化网站开发</p>
+                            <button class="view-project">查看项目</button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>交互式网站</h3>
+                        <p>为电商平台开发的全新交互式购物体验</p>
+                        <div class="project-tags">
+                            <span class="tag">网站开发</span>
+                            <span class="tag">用户体验</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="mobile" id="project3">
+                    <div class="gallery-image">
+                        <img src="https://picsum.photos/600/400?random=3" alt="移动应用">
+                        <div class="gallery-overlay">
+                            <h3>移动应用</h3>
+                            <p>用户体验设计</p>
+                            <button class="view-project">查看项目</button>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>移动应用</h3>
+                        <p>为健康管理应用设计的直观用户界面</p>
+                        <div class="project-tags">
+                            <span class="tag">移动应用</span>
+                            <span class="tag">UI设计</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多项目将通过JavaScript动态加载 -->
+            </div>
+            <div class="load-more-container">
+                <button class="load-more-btn" id="loadMore">加载更多作品</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>MOTION</h2>
+                    <p>创造非凡的数字体验</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 动效创意网站. 保留所有权利. <a href="admin.html">管理后台</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

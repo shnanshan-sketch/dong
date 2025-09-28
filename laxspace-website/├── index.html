@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动效创意网站 - 现代设计体验</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 鼠标跟随效果 -->
+    <div class="cursor-follower"></div>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 data-text="MOTION">MOTION</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">首页</a></li>
+                <li><a href="about.html" class="nav-link">关于</a></li>
+                <li><a href="services.html" class="nav-link">服务</a></li>
+                <li><a href="gallery.html" class="nav-link">作品</a></li>
+                <li><a href="contact.html" class="nav-link">联系</a></li>
+                <li><a href="admin.html" class="nav-link admin-btn"><i class="fas fa-cog"></i> 管理</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">创造<span class="text-highlight">非凡</span>的数字体验</h1>
+            <p class="hero-subtitle">我们专注于打造令人难忘的互动体验与视觉效果</p>
+            <div class="hero-buttons">
+                <a href="gallery.html" class="cta-button magnetic">
+                    <span class="button-text">查看作品</span>
+                    <div class="button-hover-effect"></div>
+                </a>
+                <a href="contact.html" class="cta-button secondary magnetic">
+                    <span class="button-text">联系我们</span>
+                    <div class="button-hover-effect"></div>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 特性区域 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">核心特性</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>流畅动效</h3>
+                    <p>精心设计的动画效果，提供顺滑的用户体验</p>
+                    <div class="feature-hover"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>响应式设计</h3>
+                    <p>完美适配各种设备，从手机到桌面电脑</p>
+                    <div class="feature-hover"></div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>现代美学</h3>
+                    <p>前沿的设计风格，创造视觉冲击力</p>
+                    <div class="feature-hover"></div>
+                </div>
+            </div>
+            <div class="features-cta">
+                <a href="services.html" class="cta-button outline magnetic">
+                    <span class="button-text">了解更多服务</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品预览 -->
+    <section id="gallery-preview" class="gallery-preview">
+        <div class="container">
+            <h2 class="section-title">精选作品</h2>
+            <div class="preview-grid">
+                <div class="preview-item">
+                    <div class="preview-image">
+                        <img src="https://picsum.photos/400/300?random=1" alt="项目1">
+                    </div>
+                    <div class="preview-content">
+                        <h3>创意品牌设计</h3>
+                        <p>品牌识别与视觉系统</p>
+                        <a href="gallery.html#project1" class="preview-link">查看详情</a>
+                    </div>
+                </div>
+                <div class="preview-item">
+                    <div class="preview-image">
+                        <img src="https://picsum.photos/400/300?random=2" alt="项目2">
+                    </div>
+                    <div class="preview-content">
+                        <h3>交互式网站</h3>
+                        <p>现代化网站开发</p>
+                        <a href="gallery.html#project2" class="preview-link">查看详情</a>
+                    </div>
+                </div>
+                <div class="preview-item">
+                    <div class="preview-image">
+                        <img src="https://picsum.photos/400/300?random=3" alt="项目3">
+                    </div>
+                    <div class="preview-content">
+                        <h3>移动应用</h3>
+                        <p>用户体验设计</p>
+                        <a href="gallery.html#project3" class="preview-link">查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-cta">
+                <a href="gallery.html" class="cta-button magnetic">
+                    <span class="button-text">查看全部作品</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>MOTION</h2>
+                    <p>创造非凡的数字体验</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 动效创意网站. 保留所有权利. <a href="admin.html">管理后台</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
